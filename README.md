@@ -1,5 +1,7 @@
 # What a forensic audit of a multi‑agent system taught me about reliability  
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **TL;DR** – While debugging a production‑grade, seven‑agent LLM platform I discovered three systemic failure modes (duplicate work, double‑recording, corrupted state) that would have caused multi‑million‑dollar loss. By redesigning the orchestration layer, adding guardrails, and instrumenting forensic‑grade observability, I reduced silent‑failure incidents from **≈12 % → <0.5 %** and cut mean‑time‑to‑recovery (MTTR) from **≈4 h → 7 min**.  
 
 The lessons map directly onto the core competencies Frontier Labs looks for: LLM‑native system design, eval‑driven development, reliability under uncertainty, model‑limit awareness, and production maturity.
